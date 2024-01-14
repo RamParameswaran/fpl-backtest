@@ -1,8 +1,7 @@
 import datetime
 import unittest
 
-from .. import PlayerGameweek
-
+from ..player_gameweek import PlayerGameweek
 
 class PlayerGameweekTest(unittest.TestCase):
 
@@ -26,11 +25,11 @@ class PlayerGameweekTest(unittest.TestCase):
 
 
 def build_empty_playergameweek():
-    return PlayerGameweek.PlayerGameweek(player_id=1, season="2022-23", round=1)
+    return PlayerGameweek(player_id=1, season="2022-23", round=1)
 
 
 def build_full_playergameweek():
-    return PlayerGameweek.PlayerGameweek(player_id=1, season="2022-23", round=1,
+    return PlayerGameweek(player_id=1, season="2022-23", round=1,
                                          opponent_team_id=1,
                                          assists=1,
                                          bonus=1,
@@ -67,5 +66,3 @@ def build_full_playergameweek():
                                          )
 
 
-if __name__ == '__main__':
-    unittest.main()

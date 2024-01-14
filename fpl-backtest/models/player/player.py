@@ -1,4 +1,4 @@
-from . import PlayerGameweek
+from .player_gameweek import PlayerGameweek
 
 
 class Player(object):
